@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nice{
+            width: 20px;
+            height: 20px;
+            color: black;
+            background-color: pink;
+            text-align: center;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- direction方向：设置滚动方向(去向) right -->
+    <marquee behavior="" direction="right">前方高能</marquee>
+    <br>
+    <marquee behavior="" direction="right" style="color: green; width: 50px; background-color: red;">前方高能</marquee>
+    <br>
+    <!-- scrollamount 滚动速度 数值越大滚动越快 -->
+    <marquee behavior="" direction="right" scrollamount="8">前方高能</marquee>
+    <br>
+    <!-- 事件：用户的行为触发某个操作 -->
+    <!-- 鼠标进入事件 onmouseover -->
+    <!-- 触发的程序：this.stop() 滚动停止 -->
+    <!-- 鼠标移出事件：onmouseout -->
+    <!-- 触发的程序：this.start() 滚动开始 -->
+    <marquee behavior="" direction="right" onmouseover="this.stop()" onmouseout="this.start()">前方高能<button class="nice">喵</button></marquee>
+    <!-- 滚动方式 -->
+    <br>
+    <!-- 来回滚动 -->
+    <marquee behavior="alternate" direction="right" width="500px" height="50px" bgcolor="skyblue">前方高能</marquee>
+    <br>
+    <!-- 滚动一次 -->
+    <marquee behavior="slide" direction="right">前方高能</marquee>
+    <!-- scrolldelay 滚动延迟 -->
+    <marquee behavior="" direction="right" scrolldelay="5000">前方高能</marquee>
+</body>
+</html>
