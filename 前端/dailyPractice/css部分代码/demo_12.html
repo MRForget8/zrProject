@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 50px;
+            width: 100px;
+        }
+        #id_div_01{
+            background-color: red;
+            float: left;
+        }
+        #id_div_02{
+            background-color: orange;
+            float: left;
+        }
+        #id_div_03{
+            background-color: yellow;
+            float: left;
+        }
+        /* 方法一在塌陷元素中，添加clear属性 */
+        #id_div_04{
+            background-color: green;
+            float: left;
+            /* clear:both; */
+        }  
+        /* 方法2：通过css选择器after 在指定元素后面插入一个空的块内容，设置清除浮动 */
+        /* #id_div_03:after{
+            display: block;
+            content: "123";
+            clear: both;
+        } */
+        #div_outer{
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div id="id_div_01"></div>
+    <div id="id_div_02"></div>
+    <div id="id_div_03"></div>
+    <div id="id_div_04"></div>
+</body>
+</html>
