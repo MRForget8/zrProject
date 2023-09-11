@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo_05</title>
+    <style>
+      /* 4.后代选择器 */
+      /* 用来选择特定元素的指定后代 */
+      /* 使用空格分隔 */
+      /* 格式：父元素 后代元素   */
+      /* 后代选择器允许使用基本选择器（标签 id class） */
+        div h1{
+            background-color: aqua;
+        }
+        div>h2{
+            color: saddlebrown;
+        }
+    </style>
+</head>
+<body>
+    <h1>div外面的h1</h1>
+    <div>
+        <h1>div里面的h1</div></h1>
+    </div>
+    
+    <div><h2>div里面的h2</h2></div>
+
+    <div><h3>div里面的h3</h3></div>
+</html>

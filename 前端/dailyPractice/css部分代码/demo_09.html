@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 50px;
+        }
+        #id_div_01{
+            border-style:dashed;/*dashed虚线 solid实线*/
+            border-width: 2px;/*边框粗细*/
+            border-color: red;
+
+        }
+        #id_div_02{
+            border: double blue 3px;
+        }
+        #id_div_03{
+            border-top: red 2px solid;
+            border-left: orange 2px solid;
+            border-right: yellow 2px solid;
+            border-bottom: green 2px solid;
+        } 
+        #id_div_04{
+            border-style: solid;
+            border-color: red;/*四边都是红*/
+            border-color: red blue;/*上下红，左右蓝*/
+            border-color: red orange yellow green;/*上右下左 顺时针*/
+
+        }
+    </style>
+</head>
+<body>
+    <div>this is a div</div>
+    <span>this is a span</span>
+
+    <div id="id_div_01">边框1</div>
+    <div id="id_div_02">边框2</div>
+    <div id="id_div_03">边框3</div>
+    <div id="id_div_04">边框4</div>
+</body>
+</html>

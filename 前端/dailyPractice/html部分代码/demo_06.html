@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <!-- 表单：提交数据 -->
+    <!-- action：“数据提交的目标URL” -->
+    <!-- method：表单提交方式（http请求方式：get/post）传递数据到页面 只能采用get请求方式（请求到服务器，可以使用post）默认method值：get -->
+    <!-- 范例：基本表单 -->
+    <form action="demo_05.html">
+        <!-- input标签属性 -->
+        <!-- type类型：input标签的输入方式 -->
+        <!-- name名称：input标签 传递的键值对（key-value）的键 -->
+        <!-- value：传递的键值对的value值，同时是input输入框的文字 -->
+        <!-- enctype:提交的内容类型 （非文件/文件） -->
+        <!-- 非文件（默认）：enctype="application/x-www-form-urlencoded" -->
+        <!-- 文件类：enctype="multipart/form-data" -->
+        <!-- text 单行文本输入框 文本输入框 -->
+        <input type="text" name="val_test" value="1111"/>
+        <!-- password框：密码框 -->
+        <input type="password">
+        <br>
+        <!-- hidden隐藏框 -->
+        <input type="hidden">
+        <br>
+        <!-- radio单选框 -->
+        <!-- 单选框通过name属性值，形成单选关联，单选框的value值 为其所代表的含义 -->
+        <input type="radio" name="box1">
+        <input type="radio" name="box1">
+        <input type="radio" name="box1">
+    
+        <!-- checkbox 多选框 -->
+        <input type="checkbox" name="box2">苹果<br>
+        <input type="checkbox" name="box2">香蕉<br>
+        <input type="checkbox" name="box2">鸭梨<br>
+
+        <!-- 文件框 -->
+        <input type="file">
+        <input type="file" multiple>
+        <br>
+
+        <!-- 日期控件 date datetime-local month week -->
+        <input type="date" name="box3">
+        <br>
+        <input type="datetime" name="box3">
+        <br>
+        <input type="month" name="box3"> 
+        <br>
+        <input type="week" name="box3">
+        <br>
+
+        <!-- 数字控件 number -->
+        <input type="number" name="box4" min="0" max="10" step="2">
+        <br>
+
+        <!-- 下拉框 select -->
+        <!-- 下拉框中的选项叫做option -->
+        <select name="box5" id="box5">
+            <option value="beijing">北京</option>
+            <option value="shanghai">上海</option>
+            <option value="guangzhou">广州</option>
+        </select>
+        <br>
+        <!-- 文本域 textarea -->
+        <!-- 多行展示，可以设置文本框的宽度（cols）和高度（）rows -->
+        <textarea name="" id="" cols="40" rows="5">输入文字</textarea>
+        <br>
+        <!-- button 一般情况下代表普通按钮标签 -->
+        <!-- onclick点击事件 -->
+        <script>
+            var answer = "He is call \"john\""
+            document.write(answer)
+        </script>
+        <input type="button" value="value为按钮上的文字" onclick="alert(answer)">
+
+        <!-- H5新增的一些表单元素 -->
+        
+        <!-- 列表 datalist标签 list属性 -->
+        <!-- 由文本框衍生出的下拉框 通过datalist标签的id值 与文本框list属性值形成关联 -->
+        <input type="text" list="datalist01">
+            <datalist id="datalist01">
+                <option value="beijing">北京</option>
+                <option value="shanghai">上海</option>
+                <option value="guangzhou">广州</option>
+            </datalist>
+            <!-- 取色器色块 -->
+            <input type="color">
+            <!-- 针对手机端 -->
+            <!-- 数字键盘 -->
+            <input type="tel">
+            <!-- 邮箱输入框 -->
+            <input type="email">
+            <!-- 地址输入框 -->
+            <input type="url" name="" id="">
+            <!-- 文本框搜索也是针对手机端 -->
+            <input type="search">
+            <!-- 滑块 range -->
+            <input type="range">
+        <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo_07</title>
+</head>
+<body>
+    <form action="">
+        <!-- checked默认勾选 -->
+        <input type="radio" name="val_radio" value="beijing">北京
+        <input type="radio" name="val_radio" value="shanghai">上海
+        <input type="radio" name="val_radio" value="guangzhou" checked>广州
+        <br>
+        <!-- selected下拉框默认选项 -->
+        <select name="val_selest">
+            <option value="beijing"></option>
+            <option value="shanghai"></option>
+            <option value="guangzhou"></option>
+        </select>
+        <br>
+        <!-- multiple 多文件开关 -->
+        <input type="file" name="val_files" multiple>
+        <!-- readonly 只读设置表单元素无法编辑 -->
+        <input type="text" name="val_text" readonly>
+        <!-- disabled 禁用当前表单元素 -->
+        <input type="button" name="val_button" disabled value="val_button">
+        <!-- placeholder 文本框中的提示文字,开始编辑就自动消失()H5 -->
+        <input type="text" name="val_text" placeholder="请输入">
+    </form>
+</body>
+</html>

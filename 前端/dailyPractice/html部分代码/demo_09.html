@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>请看以下内容</span>
+    <br>
+    <!-- src属性就是另一个网页的链接 -->
+    <!-- 用weidth或者height改变框的大小 -->
+    <!-- farmeborder网页边框设置 -->
+    <!-- scrolling 滚动条设置可以消除默认滚动条 无法消除因指定高度产生的滚动条 -->
+    <iframe src="https://www.taobao.com" frameborder="0" width="100%" height="500px" scrolling="roll"></iframe>
+
+    <!-- iframe标签 搭配超链接a标签搭配ul列表 实现简单导航链接功能 -->
+    <ul>
+        <li>
+            <a href="http://www.taobao.com" target="show_box">淘宝</a>
+        </li>
+        <li>
+            <a href="https://www.pdd.com" target="show_box">拼多多</a>
+        </li>
+        <li>
+            <a href="https://www.jd.com" target="show_box">京东</a>
+        </li>
+    </ul>
+
+    <iframe frameborder="0" width="100%" height="600" scrolling="0" name="show_box"></iframe>
+
+   
+</body>
+</html>
