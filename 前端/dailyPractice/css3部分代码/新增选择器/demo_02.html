@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* nth选择器/伪类选择器 */
+        /* 父元素中的某一类的第一子元素 */
+        ul li:first-child{
+            color: red;
+        }
+        /* 父元素中特定的子元素，n是从1开始的索引 */
+        ul li:nth-child(3){
+            color: yellow;
+        }
+        /* 父元素中的某一类的最后一个子元素 */
+        ul li:last-child{
+            color: blue;
+        }
+        /* 与nth-child类似，不同的是，它的索引只包括同类型元素 */
+        ul li:nth-of-type(5){
+            color: aqua;
+        }
+        /* 从后先前计数只计数li的个数 */
+        ul li:last-of-type(3){
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+        <li>列表4</li>
+        <li>列表5</li>
+        <li>列表6</li>
+        <li>列表7</li>
+        <li>列表8</li>
+        <p>段落</p>
+        <li>列表9</li>
+        <li>列表10</li>
+    </ul>
+</body>
+</html>

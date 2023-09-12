@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 属性选择器[type="radio"]，type属性的值时radio的标签 */
+        /* 状态选择器：checked被选中的（有使用条件的 单选/多选） */
+        /* + 兄弟选择器 被选中元素 相邻的指令元素 案例中，被选中的input标签旁边的label */
+        input[type=radio]:checked +label{
+            color: red;
+        }
+
+        input[type=text]:read-only{
+            background-color: gray;
+        }
+
+        input[type=text]:disabled{
+            background-color: orange;
+        }
+
+        /* 文本状态 */
+        /* 选择文字改变反色状态 */
+        p::selection{
+            background-color: greenyellow;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="gender" id="male"/><label for="male">男</label>
+    <input type="radio" name="gender" id="famale"><label for="famale">女</label>
+    <br>
+    <input type="text" placeholder="请输入用户名"/>
+    <input type="text" placeholder="请输入密码"/>
+
+    <p>1111111</p>
+</body>
+</html>

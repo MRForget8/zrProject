@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p[id]{
+            background-color: red;
+        }
+        /* a[href='../../']{} */
+        /* 模糊选择：以。。。开头  */
+        a[href^=https]{
+            font-size: 20px;
+        }
+        p[class~=class_p_02]{
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <p>daunluo1</p>
+    <p id="id_p_01">duanluo2</p>
+    <p id="id_p_02">duanluo3</p>
+    <p class="class_p_01">duanluo4</p>
+    <p class="class_p_02">duanluo5</p>
+
+    <a href="https://www.baidu.com">http百度</a>
+    <a href="http://www.baidu.com">http百度</a>
+    <a href="http://www.baidu.com">百度</a>
+    <a href="http://www.baidu.com">百度</a>
+</body>
+</html>
