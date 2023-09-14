@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 逻辑与 并且所有条件同时满足 结果为才为真 否则是假 两个都得是真的
+        console.log(true&&true)
+        console.log(false&&true)
+        console.log(false&&false)
+
+        // 逻辑或（或者），条件中只要一个真的，就是真
+        console.log(true||true)
+        console.log(false||true)
+        console.log(false||false)
+        
+        //逻辑非取反
+        console.log(!true)
+        console.log(!false)
+
+        //应用
+        console.log(4<6&&8<0)
+        //优先级 !>&&>||    
+        console.log(4<6||10<2&&5<3)
+        console.log(true||false&&false)
+        //通过加括号调整判断顺序
+        console.log((4<6||10<2)&&5<3)
+    </script>
+</body>
+</html>

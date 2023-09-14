@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=10;
+
+        var result = 5<3&&++a>10; //++a没有机会执行 
+        // 短路现象：表达式1&&表达式2&&……当表达式1为fales时，结果已经确定，表达式2以及后续的表达式不再执行
+        console.log(result);
+        console.log(a);
+    </script>
+</body>
+</html>

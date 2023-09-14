@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var path = prompt('请输入图片名称');
+        //ES6语法进行插值
+        //${变量名}
+        //整个字符串改为反引号包裹
+        var html_str=`<img src="img/${path}">`
+        document.write(html_str)
+        console.log(html_str)
+    </script>
+</body>
+</html>

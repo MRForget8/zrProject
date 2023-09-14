@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var str = 'hello\'111\' world'
+        console.log(str);
+        console.log('hello\nworld')//换行符号
+        console.log('hello\tworld');//制表符
+        console.log('hello1\tworld'); 
+        document.getElementById("demo").innerHTML = "段落已\r修改。";//r回车符
+    </script>
+</body>
+</html>

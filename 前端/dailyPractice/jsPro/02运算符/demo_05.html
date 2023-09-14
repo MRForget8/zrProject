@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 比较运算符可以连接数值，构成表达式，该表达式结果为boolean
+        console.log(5>3)
+
+        var a = 5,b=6;
+
+        console.log(a>b);
+        console.log(a<b);
+        console.log(a>=b);
+        console.log(a<=b);
+        console.log(a==b);
+        console.log(a!=b);
+     
+        //判断是否相等的等号 ==与===
+        console.log(1==1)
+        console.log(1===1)
+        // 其中==只比较直===比较数据类型
+        console.log(1=='1')
+        console.log(1==='1')
+        // 字符串比较 比较的是 首字母的unicode或者ascii的值
+        console.log('tom'>'jack')
+        //boolean的比较ture自动转换为1 false转换为0
+        console.log(true>false)
+        console.log(true==1)
+
+        //其他
+        console.log(""==0)
+       console.log(false=="")
+        console.log(false==null)
+        console.log(null==undefined)
+
+        console.log("100"/5);//自动计算了
+        console.log('abcd'/5);
+    </script>
+</body>
+</html>
