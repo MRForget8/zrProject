@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //弹窗：js向页面输出内容的一种互动方式
+        //弹窗-警告框
+        alert('Hello,world');
+    </script>
+</head>
+<body>
+    <button onclick="myFunction()">Touch me</button>
+    <p id="demo"></p>
+</body>
+<script>
+    //向页面输出
+    //document代表对文档对象，write（）是该对象的一个函数/方法
+    document.write('Hello world')
+    document.write('<h1>hello world</h1>')
+    function myFunction(){
+    var world = "Hello World!"
+    document.getElementById('demo').innerHTML= world;
+    }
+</script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            z-index: -1;
+        }
+        .box2{
+            width: 160px;
+            height: 213.334px;
+            position: absolute;top: 0;
+            
+        }
+        .box3{
+            margin: 0;
+            width: 160px;
+            height: 213.334px;
+            background-color: white;
+            float: left;
+            clear: both;
+            position: relative; top: -4px;
+        }
+        .box4{
+            width: 160px;
+            height: 106.667px;
+            opacity: 0.5;
+            
+        }
+        .box5{
+            width: 160px;
+            height: 106.667px;
+            background-color: black;
+            opacity: 0.5;
+            text-align: center;
+            line-height: 106.667px;
+            z-index: 3;
+            color: white;
+        }
+        .box2:hover{
+            transition-property:all ;
+            transition-duration:2s ;
+            transition-timing-function: linear;
+            position: absolute;top: -106.667px;
+        }
+    </style>
+</head>
+<body>
+   <div class="box1"><img src="../img/鼠标悬停遮罩文字/g3.jpg" alt="" width="160px"></div>
+   <div class="box2">
+        <div class="box4"></div>
+        <div class="box5">图片提示文字</div>
+   </div>
+   <div class="box3"></div>
+   
+</body>
+</html>

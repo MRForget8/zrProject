@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id_div_01{
+            width: 200px;
+            height: 50px;
+            background-color: aqua;
+            transition-property: all; /*设置参与过度的样式,all值所有样式*/
+            transition-duration: 5s; /*设置刷新时间*/
+            transition-delay: 2s; /*过度效果延迟时间*/
+            transition-timing-function: ease;/*设置过度类型 ease:加速-减速 linear:匀速*/
+        }
+        #id_div_01:hover{
+            width: 500px;
+            height: 100px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="id_div_01">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id_p_01{  
+            border: red solid 1px;
+            width: 100px;
+            /* 当文本超出宽度时，文本会自动换行. */
+            white-space: nowrap;/*设置为不换行 */
+            overflow: hidden;/*使溢出文本隐藏*/
+            text-overflow: ellipsis;/*将溢出文本以省略号形式展示*/
+        }
+        #id_p_02{
+            border: gray solid 1px;
+            width: 120px;
+            height: 30px;
+            /* 如果设定了高度限制,scroll可以产生滚动条 */
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <p id="id_p_01">这是一个段落这是一个段落这是一个段落</p>
+    <p id="id_p_02">这是一个段落这是一个段落这是一个段落</p>
+</body>
+</html>

@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/theme-chalk/index.css">
     <script src="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/index.js"></script>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+             
+        }
       #app{
         width: 400px;
         height: 550px;
@@ -74,7 +79,7 @@
                     captcha: '',
                     acceptAgreement: false,
                 },
-            },
+            }, 
             methods: {
                 submitForm() {
                     this.$refs.registerForm.validate((valid) => {
