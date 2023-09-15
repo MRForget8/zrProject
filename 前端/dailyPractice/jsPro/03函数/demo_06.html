@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //函数返回值的传递
+        function func01() {
+            return func02();+1
+        }
+        function func02() {
+            return func03();+2
+        }
+        function func03() {
+            return 3;
+        }
+
+        var resule = func01();
+        console.log(resule);
+    </script>
+</body>
+</html>

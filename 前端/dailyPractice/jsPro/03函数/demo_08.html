@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <input type="text" id="num3">
+    <input type="text" id="num4" placeholder="最大值结果" readonly/>
+    <br>
+    <button onclick="myClick()">Click me</button>
+</body>
+<script>
+    function myClick(){
+        alert(func01())
+    }
+    function func01(){
+        var a = parseInt(document.getElementById('num1'));
+        var b = parseInt(document.getElementById('num2'));
+        var c = parseInt(document.getElementById('num3'));
+
+        if(a>b>c){
+            return a;
+        }
+        if(b>a>c){
+            return b;
+        }
+        if(c>b>a){
+            return c;
+        }
+    }
+</script>
+</html>

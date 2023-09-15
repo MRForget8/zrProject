@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //调用函数
+        // 返回值：调用函数的代码 本身带值（为返回值）
+        var resule = func01(2,3)
+        console.log(resule)
+        function func01(a,b) {
+            var sum = a+b;
+            return sum ;
+        }
+
+        //如果一个函数无返回值，那么该函数的返回值为undifiend
+        function func02(a,b) {
+            var sum = a+b;
+        }
+        var resule2 = func02(5,8)
+        console.log(resule2)
+    </script>
+</body>
+</html>

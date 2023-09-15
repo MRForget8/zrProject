@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function func01() {
+            console.log('hello');
+            return;//退出函数
+            console.log('world');//不会被执行的代码
+        }
+        func01();
+
+        function func02() {
+            console.log('hello');
+            return;
+            console.log('world');
+        }
+        console.log(func02());
+        //执行return后不管后面有没有代码，都直接退出函数
+    </script>
+</body>
+</html>
