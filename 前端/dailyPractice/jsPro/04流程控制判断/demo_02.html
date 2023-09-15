@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="func01()">click</button>
+    <script>
+        function func01() {
+            var score = prompt("Score");
+
+            if (score==null){
+                alert('cancle')
+                return
+            }
+            if (score==0){
+                alert('can\'t be zero')
+            }
+            if(isNaN(score)){
+                alert('can\'t be NaN')
+                return
+            }
+
+            // score数据类型转化为number
+
+            score=parseInt(score);
+
+            // 判断分数是否及格
+            // 1.判断数字是否在0~100之间
+            if(score<0||score>100){
+                alert('It must in 0~100')
+            }
+            else{
+                // 判断分数是否及格
+                if(score>=60){
+                    alert('you\'re win')
+                }else{
+                    alert('you\'re lose')
+                }
+            }
+        }
+    </script>
+</body>
+</html>
