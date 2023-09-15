@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var count = 0;
+        // function init() {
+        //     console.log(++count)
+        //     init();
+        // }
+        // init();
+
+        // 案例：求阶乘的函数
+        function factorial(n) {
+            if (n === 1) {
+                return 1; // 阶乘的基本情况，0和1的阶乘都是1
+            } else {
+                return n * factorial(n - 1); // 递归调用
+            }
+        }
+
+                // 使用示例
+                console.log(factorial(170)); // 输出 120，因为5! = 5 * 4 * 3 * 2 * 1 = 120
+
+        </script>
+</body>
+</html> 
