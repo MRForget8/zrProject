@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var inPutNumber = prompt("请输入一个五位数")
+
+        if (inPutNumber.length === 5 && !isNaN(inPutNumber)){
+            
+            var number = parseInt(inPutNumber)
+
+            var num5 = number%10
+            number = Math.floor(number/10)
+            var num4 = number%10
+            number = Math.floor(number/10)
+            var num3 = number%10
+            number = Math.floor(number/10)
+            var num2 = number%10
+            number = Math.floor(number/10)
+            var num1 = number%10
+            number = Math.floor(number/10)
+
+            console.log(num1)
+            console.log(num2)
+            console.log(num3)
+            console.log(num4)
+            console.log(num5)
+        }
+        else{
+            console.log('无效')
+        }
+    </script>
+</body>
+</html>

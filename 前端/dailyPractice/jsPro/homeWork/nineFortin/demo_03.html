@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>动态创建表格</title>
+</head>
+<body>
+
+<script>
+    // 弹窗输入表格宽度
+    var width = prompt("请输入表格宽度（单位：像素）:");
+
+    // 弹窗输入表格高度
+    var height = prompt("请输入表格高度（单位：像素）:");
+
+    // 弹窗输入背景颜色
+    var bgColor = prompt("请输入背景颜色:");
+
+    // 弹窗输入对齐方式
+    var textAlign = prompt("请输入对齐方式（left, center, right）:");
+
+    // 弹窗输入单元格1的内容
+    var cell1Content = prompt("请输入单元格1的内容:");
+
+    // 弹窗输入单元格2的内容
+    var cell2Content = prompt("请输入单元格2的内容:");
+
+    // 创建表格元素
+    var table = document.createElement("table");
+    table.style.width = width + "px";
+    table.style.height = height + "px";
+    table.style.backgroundColor = bgColor;
+
+    // 创建表格行
+    var row = document.createElement("tr");
+
+    // 创建单元格1
+    var cell1 = document.createElement("td");
+    cell1.style.textAlign = textAlign;
+    cell1.textContent = cell1Content;
+
+    // 创建单元格2
+    var cell2 = document.createElement("td");
+    cell2.style.textAlign = textAlign;
+    cell2.textContent = cell2Content;
+
+    // 将单元格1和单元格2添加到行中
+    row.appendChild(cell1);
+    row.appendChild(cell2);
+
+    // 将行添加到表格中
+    table.appendChild(row);
+
+    // 将表格添加到页面
+    document.body.appendChild(table);
+</script>
+
+</body>
+</html>
