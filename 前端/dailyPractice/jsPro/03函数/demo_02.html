@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 调用 -->
+    <!-- 实体参数（实参）：调用函数时，具体的值，多个实参 逗号分隔 -->
+    <button onclick="myClick('jack','builder')">Click me</button>
+</head>
+<body>
+    <script>
+
+        // 形式参数（形参）：没有具体的值，只有变量名（自定义），多个变量用 逗号分隔
+        // 在方法体中，可以直接使用形参
+
+        function myClick(name,job) {
+            alert('name:'+ name+'job:'+job);
+        }
+
+    </script>
+</body>
+</html>
