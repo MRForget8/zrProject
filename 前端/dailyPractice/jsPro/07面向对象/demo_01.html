@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function person(name,age){
+
+            // 声明属性 this.xxx 左侧的xxx为person类的属性 右侧为参数
+
+            this.name = name;
+            this.age = age;
+
+        }
+
+        //创建对象实例（创建某个类的对象）
+        //格式：var 对象名=new类名（参数）；
+        var person01 = new person('zhangsan', '19');
+        console.log(person01.name); 
+        var person02 = new person('lisi', '20')
+        person02.name = 'lisan';
+        console.log(person02.name);
+    </script>
+</body>
+</html>

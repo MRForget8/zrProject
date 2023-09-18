@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function func001() {
+
+            var a  = 20;//作用域仅限于函数func01之内
+
+            console.log(a);
+
+        }
+
+        func001();
+        // console.log(a);
+
+        //特例：js对于代码块中的局部变量 一般不会马上清除 所以可能离开代码块依然有效
+
+        for(var i = 0; i <5 ; i++) {
+            
+        }
+        console.log(i);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <script>
+
+            var a = 20;
+            //全部函数内的a都为局部变量a
+            function init() {
+
+                console.log(a);//此时的a状态为已声明为赋值
+                var a = 100;//声明了同名的局部变量
+                console.log(a);
+
+            }
+
+            init();
+        </script>
+    
+
+</body>
+</html>
