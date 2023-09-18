@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //数组中空值也占位
+        var arr = [100,'abc',,,,,,,,true,,,,,]
+
+        console.log(arr.length)
+
+        //下标/角标/下角标/序列号 
+
+        // 格式：数组名【下标】第下标值+1个元素 arr[0]表述数组中的第一个元素
+
+        console.log(arr[1])
+        // !!!js中，下标超出实际数组范围取值时，显示undifferentiated
+        console.log(arr[100])
+
+    </script>
+
+</body>
+</html>
