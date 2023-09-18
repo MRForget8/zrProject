@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function Person(name,age) {
+
+            this.name = name;
+            this.age = age;
+
+            this.run = function(){
+                console.log(this.name+'is running');
+            }
+        }
+
+        var person01 = new Person('lisan',19)
+
+        person01.gender = 'male';
+        console.log(person01)
+
+        var person02 = new Person('lisirui',20)
+        console.log(person02)
+        delete person01.gender
+        delete person02.age
+        person02.run()
+    </script>
+</body>
+</html>
