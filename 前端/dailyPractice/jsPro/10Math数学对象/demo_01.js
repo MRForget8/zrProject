@@ -1,3 +1,14 @@
-console.log(Math.max(5,20))
-console.log(Math.min(5,20))
-console.log(Math.abs(-5))
+console.log(Math.max(5,20))//最大值
+console.log(Math.min(5,20))//最小值
+console.log(Math.abs(-5))//绝对值
+console.log(Math.pow(2,4))//a的b次方
+console.log(Math.sqrt(25))//开根号
+console.log(Math.PI)//兀
+console.log(Math.floor(1234.666))//向下取整
+console.log(Math.ceil(1234.333))//向上取整
+console.log(Math.round(1234.333))//四舍五入
+console.log(Math.round(1234.666))
+//round如果里面的值是负数则5舍6入
+console.log(Math.round(-1234.4))
+console.log(Math.round(-1234.5))
+console.log(Math.round(-1234.6))
