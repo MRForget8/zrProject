@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo_01</title>
+</head>
+<body>
+    <input type="text" id="inputString" placeholder="请输入身份证号">
+    <button onclick="getIDNumber()">Touch me</button>
+    <script>
+
+        function getIDNumber() {
+
+            var number = document.getElementById("inputString").value;
+
+            if (number.length != 18){
+
+                console.log("请输入正确格式的身份证")
+            }else{
+
+                var year = number.substring(6,10);
+                var month = number.substring(11,12);
+                var day = number.substring(13,14);
+                console.log('生日是'+year + "年" + month + "月" + day+ "日")
+            }
+
+        }
+
+    </script>
+</body>
+</html>

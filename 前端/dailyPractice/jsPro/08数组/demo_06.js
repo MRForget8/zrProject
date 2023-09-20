@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <script>
 
         var arr = [1,2,3,4,5,6,7,8,9];
 
@@ -20,7 +10,3 @@
         //增加功能 splice（从指定下标元素开始，0，添加的目标元素）
         arr.splice(2,0,'a','b');
         console.log(arr);
-    </script>
-
-</body>
-</html>

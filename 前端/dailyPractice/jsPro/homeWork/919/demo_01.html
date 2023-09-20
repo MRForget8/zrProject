@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>demo_01</title>
 </head>
 <body>
-    
+    <input type="text" id="inputString" placeholder="请输入不少于三个数的字符串">
+    <button onclick="getThreeNumber()">Touch me</button>
+    <script>
+
+        function getThreeNumber() {
+
+            var number = document.getElementById("inputString").value;
+
+            if (number.length < 3){
+
+                console.log("请输入3个以上字符")
+            }else{
+
+                var lastThree = number.substring(number.length - 3);
+                console.log(lastThree)
+            }
+
+        }
+
+    </script>
 </body>
 </html>

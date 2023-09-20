@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.baidu.com">这是超链接</a>
+    <br>
+    <button onclick="setProperty()">Touch me</button>
+    <script>
+        //获得a标签元素节点
+        var a1 = document.getElementsByTagName('a')[0];
+        function setProperty() {
+        a1.href='https://www.163.com'
+        a1.target='_blank';
+        a1.title='Touch me'
+        }
+    </script>
+</body>
+</html>

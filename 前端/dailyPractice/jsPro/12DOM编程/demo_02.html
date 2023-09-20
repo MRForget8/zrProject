@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="id_div_01">this is a title</h1>
+    </div>
+
+    <input type="text" id="id_ipt_01">
+    <button onclick="func01()">Touch me</button>
+    <script>
+        //获得div节点对象
+        var div_1 = document.getElementById('id_div_01');
+        // var div_html = div_1.innerHTML;
+        // console.log(div_html);
+
+        // div_1.innerHTML='<img src=../../img/images.jpg>'
+    
+    
+        // var div_text = div_1.innerText
+        // div_1.innerText = 'It can be changed'
+
+        function func01() {
+            var input_1 = document.getElementById('id_ipt_01').value;
+            div_1.innerText = input_1  ;
+        }
+    </script>
+</body>
+</html>
