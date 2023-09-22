@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="id_ipt_01">
+
+    <div id="id_div_01"></div>
+    <script>
+
+        document.getElementById('id_ipt_01').addEventListener('keydown', function(e) {
+
+            document.getElementById('id_div_01').innerText = e.keyCode
+
+        })
+
+        //左上右下 37-40
+        //回车13
+        //空格32
+
+        // 案例判断为是否为ctrl+a
+        if(e.ctrlKey && e.KeyCode == 65){
+            alert('ctrl+a')
+        }
+    </script>
+</body>
+</html>

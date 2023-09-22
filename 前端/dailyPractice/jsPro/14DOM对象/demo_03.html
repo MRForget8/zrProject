@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id_div_01">
+
+        <p id="id_p_01">p1</p>
+
+        <p id="id_p_02">p2</p>
+
+        <input type="text" value="1">
+
+    </div>
+
+    <button onclick="func01()">查看父节点</button>
+
+    <button onclick="func02()">查看子节点</button>
+
+    <button onclick="func03()">查看节点信息</button>
+    <script>
+
+        function func01() {
+
+            var p1 = document.getElementById("id_p_01");
+
+            // 获取p1节点的父节点
+            var parent_obj = p1.parentNode;
+            console.log(parent_obj);
+
+        }
+
+        function func02(){
+
+            var div_1 = document.getElementById("id_div_01")
+
+            //查看子节点 返回的数组
+            //注意:html代码格式会被认为是子节点
+
+            var div_child = div_1.childNodes;
+
+            console.log(div_child);
+
+            for(var i = 0; i < div_child.length; i++){
+
+                console.log(div_child[i]);
+
+            }
+
+        }
+
+        function func03(){
+
+            var div_1 = document.getElementById("id_div_01")
+
+            console.log(div_1.nodeName);
+            console.log(div_1.nodeType);
+            console.log(div_1.nodeValue);
+            for(var i = 0; i < div_1.childNodes.length ;i++){
+
+                if(div_1.childNodes[i].nodeName == 'INPUT'){
+
+                    console.log(div_1.childNodes[i].value);
+
+                }
+
+           }
+
+        }
+
+    </script>
+</body>
+</html>

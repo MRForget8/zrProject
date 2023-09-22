@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id_div_01">
+
+        <input type="text"  id="id_ipt_01" placeholder="请输入电话号">
+        <br>
+
+        <button onclick="func01()" id="id_but_01">添加电话号</button>
+
+    </div>
+
+    <script>
+
+        function func01() {
+
+            var div_1 = document.getElementById("id_div_01");
+            var ipt1 = document.getElementById("id_ipt_01");
+            var ipt2 = document.createElement('input');
+            var br = document.createElement('br');
+            var button = document.getElementById("id_but_01");
+
+            ipt2.type = 'text';
+            ipt2.placeholder = "请输入电话号";
+            
+            div_1.insertBefore(ipt2,button);
+            div_1.insertBefore(br,button);
+
+        }
+
+    </script>
+</body>
+</html>

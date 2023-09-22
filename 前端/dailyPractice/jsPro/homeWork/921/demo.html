@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>生成表格</title>
+	</head>
+	<body>
+		<div>
+			<button onclick="generateTable()">生成表格</button>
+			<div id="tableContainer"></div>
+		</div>
+		
+		<script>
+			var info = '[{"id":101,"name":"jack","age":27},{"id":102,"name":"张三","age":20},{"id":103,"name":"李四","age":22},{"id":104,"name":"赵四","age":45}]';
+
+			function generateTable() {
+				var tableData = JSON.parse(info);
+				var tableContainer = document.getElementById("tableContainer");
+
+				// 创建表格元素
+				var table = document.createElement("table");
+				table.setAttribute("border", "1");
+
+				// 创建表头
+				var thead = document.createElement("thead");
+				var headerRow = thead.insertRow();
+				var headers = ["ID", "Name", "Age"];
+
+				for (var i = 0; i < headers.length; i++) {
+					var th = document.createElement("th");
+					th.textContent = headers[i];
+					headerRow.appendChild(th);
+				}
+
+				thead.appendChild(headerRow);
+				table.appendChild(thead);
+
+				// 创建表格内容
+				var tbody = document.createElement("tbody");
+
+				for (var i = 0; i < tableData.length; i++) {
+					var row = tbody.insertRow();
+					var cell1 = row.insertCell(0);
+					var cell2 = row.insertCell(1);
+					var cell3 = row.insertCell(2);
+
+					cell1.textContent = tableData[i].id;
+					cell2.textContent = tableData[i].name;
+					cell3.textContent = tableData[i].age;
+				}
+
+				table.appendChild(tbody);
+
+				// 将表格添加到页面中
+				tableContainer.innerHTML = ""; // 清空容器
+				tableContainer.appendChild(table);
+			}
+		</script>
+	</body>
+</html>

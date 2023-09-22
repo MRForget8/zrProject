@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id_div_01">
+
+
+
+    </div>
+
+
+    <button onclick="createTable()">touch</button>
+
+
+    <script>
+
+        function createTable(){
+
+            var div_1 = document.getElementById('id_div_01');
+
+            var table_new = document.createElement('table');
+
+            table_new.setAttribute('width', 500);
+            table_new.setAttribute('height',500);
+            table_new.setAttribute('border', '1px');
+            table_new.setAttribute('align', 'center');
+
+            //添加行
+
+            for (var i = 1; i <= 5 ; i++) {
+                var tr_new = table_new.insertRow()
+                for (var j = 1; j<=3;j++){
+
+                    var td_new = tr_new.insertCell()
+                    td_new.innerText='内容'+i+'-'+j
+                    // tr_new.appendChild(td_new)
+
+                }
+
+            }
+            // table_new.appendChild(tr_new)
+
+            div_1.appendChild(table_new)
+
+        }
+
+    </script>
+</body>
+</html>

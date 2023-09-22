@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../../js/vue.js"></script>
+</head>
+<body>
+    <div id="div_1">
+    <!-- <p>{{message}}</p> -->
+    <button @click="touch">this is a button </button>
+    <input type="text" v-model="yes">
+    <p>{{yes}}</p>
+    </div>
+    <script>
+
+        var vm = new Vue({
+            el:'#div_1',
+            data:{
+                yes : ""
+            },
+            methods: {
+                touch(){
+                    alert("touch")
+                    console.log("touch")
+                }
+            },
+
+        });
+
+    </script>
+</body>
+</html>

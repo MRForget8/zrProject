@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../../../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <img :src="currentImage" alt="Image" @click="nextImage" />
+      </div>    
+      
+      <script>
+
+var vm = new Vue({
+  el: '#app',
+  data: {
+    images: [
+      'img/img1.jpg',
+      'img/img2.jpg',
+      'img/img3.jpg',
+    ],
+    currentIndex: 0
+  },
+  computed: {
+    currentImage() {
+      return this.images[this.currentIndex];
+    }
+  },
+  methods: {
+    nextImage() {
+      this.currentIndex = (this.currentIndex + 1) % this.images.length;
+    }
+  }
+});
+
+
+      </script>
+</body>
+</html>

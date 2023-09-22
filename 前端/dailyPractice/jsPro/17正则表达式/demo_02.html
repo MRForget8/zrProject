@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="id_ipt_01"><span id="id_span_01">验证结果</span>
+
+    <script>
+
+        document.getElementById("id_ipt_01").addEventListener('blur',function(e){
+
+            e=e||window.event;
+            var str = e.target.value;
+
+            var reg = /a/;
+            // var reg=/a/;
+            // var reg=/\d/;
+            // var reg=/\D/;
+            // var reg=/\w/;
+            // var reg=/[13579]/;
+            // var reg=/abc/bbc/;
+            // var reg=/a0+b/;
+            // var reg=/ald*b/;
+            // var reg=/a\d?b/;
+            // var reg=/\d(51/;// var reg=/A\d/;
+            var resule = reg.test(str);
+
+
+            var span_1 = document.getElementById("id_span_01");
+            if(resule){
+
+                span_1.innerText = '正确的';
+
+            }else{
+
+                span_1.innerText='不对';
+
+            }
+
+        })
+
+    </script>
+
+</body>
+</html>

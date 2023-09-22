@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="stopTimer()">stopInterview</button>
+    <button onclick="stopdlay()">stopTimeout</button>
+    <script>
+
+        // 设置定时器
+
+        // window.setInterval(func01,0)
+        // //函数表达式：函数名 或者匿名函数
+
+        // function func01() {
+
+        //     console.log(Date.now().toLocaleString())
+
+        // }
+
+        // 停止定时器
+
+        // 如果需要停止setInterval 必须要有定时器对象
+
+        var timer = setInterval(function(){
+            console.log('ok')
+        },1000);
+
+        function stopTimer(){
+
+            window.clearInterval(timer)
+
+        }
+
+        //格式同setInerval
+        var delay = setTimeout(function(){
+
+            alert('hello')
+
+        },2000)
+
+        function stopdlay(){
+
+            clearTimeout(delay)
+
+        }
+    </script>
+</body>
+</html>

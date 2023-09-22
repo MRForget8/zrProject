@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../../js/vue.js"></script>
+</head>
+<body>
+    <button id="id_but_01" @click="" v-molde="touch">{{touch}}</button>
+
+
+    <script>
+
+        var btn01 = document.getElementById('id_but_01');
+
+
+        //在匿名函数形参列表中 可以获取事件对象（习惯命名为e或者event）
+        btn01.onclick=function(event) {
+
+            // console.log("btn01 clicked");
+            console.log(event.type);
+            console.log(event.target);
+            event.value = 'hello';
+            console.log(event.value);
+            
+        }
+        
+    
+    </script>
+</body>
+</html>

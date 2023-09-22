@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id_div_01">
+        当前事件
+    </div>
+    <button onclick="startTime()">开始</button><br>
+    <button onclick="stopTime()">暂停</button><br>
+
+
+    <script>
+
+        var div_01 = document.createElement("id_div_01");
+
+        function showData() {
+
+            var date_now = new Date();
+            date_now = date_now.toLocaleString();
+            var div01 = document.getElementById('id_div_01');
+            div01.innerText=date_now;
+
+        }
+
+
+        function startTime() {
+            
+            timer = setInterval(showData,0)
+
+            
+        }
+
+        function stopTime() {
+
+            clearInterval(timer);
+
+        }
+
+        
+
+    </script>
+</body>
+</html>

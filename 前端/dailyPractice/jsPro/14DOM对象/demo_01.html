@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id_div_01">
+
+
+    </div>
+
+    <div id="id_div_02">
+
+        <p id="id_p_01">this is a p
+        </p>
+
+    </div>
+
+    <div id="id_div_03">
+
+        <p id="id_p_02">11111</p>
+
+    </div>
+
+    <button onclick="func01()">touch1</button>
+
+    <button onclick="func02()">touch2</button>
+
+    <button onclick="func03()">touch3</button>
+
+    <script>
+
+        function func01() {
+
+            var div_1 = document.getElementById("id_div_01");
+            //创建p标签节点
+            var p_1 = document.createElement("p");
+            //动态创建文本节点
+            var txt = document.createTextNode('hello world')
+            //向p_1元素节点添加子节点
+            p_1.appendChild(txt);
+            //向div_1元素节点添加子节点
+            div_1.appendChild(p_1);
+        }
+
+        function func02(){
+            var div_2 = document.getElementById("id_div_02");
+            var p_1 = document.getElementById("id_p_01");
+
+            var h_1 = document.createElement("h1");
+            h_1.innerText = 'Hello';
+            h_1.align = 'center';
+            //在div_2里面把h1标签放到p之前
+            div_2.insertBefore(h_1,p_1);
+        }
+        function func03(){
+            var div_3 = document.getElementById("id_div_03");
+            var p_2 = document.getElementById("id_p_02")
+
+            div_3.removeChild(p_2)
+
+
+        }
+
+    </script>
+</body>
+</html>

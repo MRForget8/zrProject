@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p icss="p1">this is a p </p>
+    <p icss="p2">this is a p </p>
+    <p icss="p3">this is a p </p>
+    <p icss="p4">this is a p </p>
+    <p icss="p5">this is a p </p>
+
+    <button onclick="getIcss()">Touch me </button>
+
+    <script>
+
+        function getIcss() {
+
+            var p_arr=document.getElementsByTagName('p');
+            console.log(p_arr.length);
+
+            for(var i= 0;i<p_arr.length;i++){
+                
+                //自定义属性 元素.属性值无效
+                console.log(p_arr[i].getAttribute('icss'));
+                p_arr[i].setAttribute('icss','data-p-'+i)
+                console.log(p_arr[i].getAttribute('icss'));
+
+            }
+        }
+
+    </script>
+</body>
+</html>

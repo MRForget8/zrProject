@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" value="4" id="id_ipt_01"> 
+    <button onclick="func01()">点击累加</button> 
+    <input type="text" readonly value="1" id="id_ipt_02">
+
+    <script>
+
+       
+
+
+    
+        function func01(){
+        var ipt1 = parseInt(document.getElementById("id_ipt_01").value);
+        var ipt2 = parseInt(document.getElementById("id_ipt_02").value);
+        console.log( ipt1+ipt2);
+        
+        document.getElementById('id_ipt_02').value = ipt1+ipt2
+        }
+
+    </script>
+</body>
+</html>
