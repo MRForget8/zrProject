@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="id_div_01">
+
+        展示后端服务器响应内容
+
+    </div>
+
+    <button onclick="sendAjax()">发送ajax请求</button>
+
+
+    <script>
+
+        function sendAjax() {
+
+            // alert();
+            // 1.创建ajax对象:xhr
+            var xhr = new XMLHttpRequest();
+
+            // 2.向服务器发送请求
+            // 格式：ajax对象.open(请求类型，请求url，是否打开异步)
+            xhr.open("posT","http://www.tuling123.com/openapi/api",true)
+            xhr.send("Content-type","application/x-www-form-urlencoded");
+            var param_obj={
+
+                key:'caf4e221ccca4e46a5eafbd7b2ff65a0',
+                info:'你好'
+
+            }
+
+            xhr.send('param'+JSON.stringify(param_obj))
+
+            // xhr.open('GET','https://api.vvhan.com/api/horoscope')
+
+
+            // 3.监听响应(接收返回数据)
+            // 格式：ajax对象.监听事件=匿名函数
+            xhr.onreadystatechange=function(){
+
+                // 监听事件会监听整个ajax请求的全部发生过程，我们只需要监听响应部分（响应成功部分）
+                // ajax对象.readyState流程（0~4）其中4表示响应
+                // ajax对象.status系统返回码/机器码 200表示请求发送成功 返回数据成功
+                if(xhr.readyState==4&&xhr.status==200){
+
+                    // alert('ajax text ok')
+                    //响应数据格式：
+                    // ajax对象.resoponseText
+                    var div_1 = document.getElementById('id_div_01')
+                    div_1.innerHTML=xhr.responseText
+
+                }
+
+            }
+
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="func01()">写入cookie</button>
+    <button onclick="func02()">读取cookie</button>
+
+    <button onclick="func03()">写入cookie（设置过期时间）</button>
+
+    <script>
+
+        function func01() {
+
+            document.cookie = 'username=tom';
+            document.cookie = 'password=123456';
+
+            alert('writen over')
+        }
+
+        function func02() {
+
+            console.log(document.cookie)
+
+        }
+
+        function func03(){
+
+            var time = new Date();
+            var ms = 1000*3;
+            time.setTime(time.getTime()+ms);
+
+            document.cookie = 'username=jack';
+
+        }
+
+    </script>
+</body>
+</html>

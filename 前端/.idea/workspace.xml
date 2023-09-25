@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9cd32366-ff12-41f4-a986-ec4507f60f4e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/jqPro/html/dailyPractice/demo_01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jqPro/html/jQuery的引入.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jqPro/jqPro.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dailyPractice/jsPro/homeWork/919/demo_03.html" beforeDir="false" afterPath="$PROJECT_DIR$/dailyPractice/jsPro/homeWork/919/demo_03.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dailyPractice/jsPro/17正则表达式/demo_02.html" beforeDir="false" afterPath="$PROJECT_DIR$/dailyPractice/jsPro/17正则表达式/demo_02.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +49,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="jbr-17" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -52,6 +57,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -67,6 +73,7 @@
       <workItem from="1693988377007" duration="18000" />
       <workItem from="1695188780403" duration="584000" />
       <workItem from="1695277198139" duration="2000" />
+      <workItem from="1695625088735" duration="644000" />
     </task>
     <servers />
   </component>

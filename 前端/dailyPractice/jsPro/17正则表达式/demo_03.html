@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="func01()">match校验 </button>
+    <button onclick="func02()">search</button>
+    <button onclick="func03()">文本替换</button>
+
+    <script>
+
+        function func01(){
+
+            var str = 'abcde111'
+            var reg = /\d*/
+            var resule = str.match(reg)
+            console.log(resule);
+
+        }
+
+        function func02(){
+
+            var str = 'abcde111123'
+            var reg = /123/
+            var resule = str.search(reg)
+            console.log(resule);//查新下标位（不存在输出-1）
+
+        }
+
+        function func03(){
+             var str = 'abcdefg12345'
+             var resule = str.replace(/c/,'*')
+             console.log(resule);
+
+
+        }
+
+    </script>
+
+</body>
+</html>
