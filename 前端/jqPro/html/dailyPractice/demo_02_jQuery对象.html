@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="../../../../jquery/node_modules/jquery/dist/jquery.js"></script>
+</head>
+<body>
+  <h1 id="id_h_1">标题1</h1>
+  <h1 id="id_h_2">标题2</h1>
+
+
+  <script>
+    $(document).ready(function(){
+
+      var h_1 = document.getElementById('id_h_1');
+      // console.log(h_1.innerText)
+      h_1.innerText = 'Hello'
+
+
+      // 下行代码完全等于getElementbyId那个
+      let $h_2 = $('#id_h_2');
+      // console.log($h_2.text());
+      $h_2.text('hello');
+
+      // js原始的DOM对象 ===》jQuery对象
+      let $obj=$(h_1);
+
+    } );
+
+
+  </script>
+</body>
+</html>

@@ -7,5 +7,32 @@
 </head>
 <body>
 
+  <p>段落1</p>
+  <p>段落2</p>
+  <p>段落3</p>
+  <p>段落4</p>
+
+
+
+  <script>
+
+
+
+      window.onload=function (){
+
+        console.log('js文档就绪事件')
+
+      }
+
+      $(document).ready(function(){
+        console.log('Jquery文档就绪事件')
+      });
+
+      $(function(){
+
+        console.log('Jquery has been already')
+        $('p').hide();
+      })
+  </script>
 </body>
 </html>

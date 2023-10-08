@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="../../../../jquery/node_modules/jquery/dist/jquery.js"></script>
+</head>
+<body>
+  <h1></h1>
+  <h1 id="id_h_3">标题3</h1>
+  <h1 id="id_h_4">标题4</h1>
+  <h1 id="id_h_5">标题5</h1>
+  <script>
+
+    $(document).ready(function() {
+
+      let h_3 = document.getElementsByTagName('h1')[0];
+      console.log(h_3.innerText)
+
+      let h_4 = $('h1').get(1);
+      let $h_4 = $(h_4)
+      console.log($h_4.text());
+    });
+
+  </script>
+</body>
+</html>
